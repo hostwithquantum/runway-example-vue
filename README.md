@@ -25,8 +25,8 @@ There are other possibilities, including [running vue with server-side
 rendering](https://vitejs.dev/guide/ssr.html). The important thing for
 deployment on runway is:
 
-* in `package.json`:
-    * `scripts.build` is the what runway runs during the build
-    * `scripts.start` then starts the server
+* there's a `project.toml` which tells runway to run `npm build` during
+  the build, and to keep the `dist` directory that this creates
+* in `package.json`, `scripts.start` then starts the server
 * the server must listen on the port given by the environment variable `PORT`
 

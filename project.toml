@@ -1,0 +1,9 @@
+[ build ]
+  [[ build.env ]]
+    name="BP_NODE_RUN_SCRIPTS"
+    # comma (",") separated list of npm scripts to run during build
+    value="build"
+  [[ build.env ]]
+    name="BP_KEEP_FILES"
+    # colon (":") separated list of files to keep after the build
+    value="dist/*"
